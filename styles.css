@@ -1,0 +1,583 @@
+   .nav1 {
+    height: auto; 
+    background-color: rgb(34, 34, 34);
+}
+
+.p1{
+    color: rgb(162, 170, 191);
+    margin-left: 100px;
+   
+}
+.p2 {
+    color: rgb(162, 170, 191);
+    margin-left: 25px;
+    margin-right: 60px;
+    
+}
+
+#icons {
+    color: rgb(162, 170, 191);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .p1, .p2 {
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    #icons {
+        padding-right: 0;
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+
+
+#red-icon {
+    color: rgba(215, 9, 47, 0.977);
+  }
+
+.navitems {
+    color: rgb(141, 147, 161);
+    cursor: pointer;
+    margin-left: 200px;
+    padding-top: 5px;
+}
+
+/* Second Navbar */
+
+ .nav-item ul {
+    display: none;
+    top: 100%;
+    background-color: rgb(236, 240, 244);   
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item:hover ul {
+    display: block;
+    /* background-color: white; */
+}
+
+.nav-item ul li a {
+    display: block !important;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-item ul li:hover {
+    background: white;
+}
+
+.search-popup {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.search-btn{
+    padding-left: 10px;
+    cursor: pointer;
+}
+/* Styles for the search input field */
+.search-input {
+    width: 200px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+ /* Styles for the close icon */
+ .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.search-icon-inside {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+/* section 1 */
+
+ #imageSection {
+    min-height: 700px; 
+    overflow: hidden; 
+}
+#imageSection .image-container {
+    display: none;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 700px;
+}
+
+/* dimensions for images within the container */
+#imageSection .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animation class to zoom in */
+.zoom-in {
+    animation: zoomIn 6s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Style for text */
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    animation: fadeInText 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+/* Keyframes for text fade-in animation */
+@keyframes fadeInText {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-icon-container {
+    border: 2px solid #000; 
+    padding: 10px; 
+    border-radius: 0%; 
+    cursor: pointer;
+}
+
+.fa-arrow-down {
+    font-size: 24px; 
+    color: #000; 
+}
+
+/* section 2*/
+#transportsec {
+    min-height: 400px;
+    overflow: hidden;    
+}
+
+.rowmain {
+    /* background-color: #000; */
+    color: white
+}
+
+.first-third {
+    background-color: rgb(35, 35, 49);
+    border: rgb(86, 85, 85) 0.2px solid;
+   
+}
+
+.sec-forth {
+    background-color: rgb(51, 51, 67);
+    border: rgb(103, 102, 102) 0.2px solid;
+} 
+
+.icons {
+    font-size: 40px;
+}
+
+/* section 3*/
+#service {
+    min-height: auto;
+    overflow: hidden;
+    background-image: url('./images/dotedmap.PNG');
+    background-size: cover;
+    background-position: center;
+    padding: 20px; 
+    
+}
+
+#service .image-container {
+    position: relative;
+    width: 100%;   
+}
+
+#service .card {
+    background-color: rgba(255, 255, 255, 0.9);
+    height:400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(191, 189, 189, 0.3);
+    text-align: center;
+    transition: transform 0.2s;
+    margin: 20px;
+}
+
+#service .card:hover {
+    transform: scale(1.05);
+    background-color: rgb(221, 27, 60);
+    cursor: pointer;
+    color: white
+}
+
+#service .card .icons {
+    font-size: 30px;
+    padding: 24px;
+    background-color: rgb(216, 221, 227);
+    border-radius: 50%;
+    color: rgba(215, 9, 47, 0.977);
+}
+
+.card:hover .icons {
+    background-color: white; 
+}
+
+/* section 4 */
+#tech {
+    padding: 50px 15px;
+}
+
+/* Add custom styles for the overlay */
+.position-relative {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.tech-heading {
+    font-size: 35px;
+    color: rgba(215, 9, 47, 0.977);
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+
+.tech-description {
+    font-size: 15px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+/* section 5 */
+/* section 6 */
+#own {
+    background: 
+        url('./images/plane.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .para {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(215, 9, 47, 0.977);
+}
+.heading {
+    font-size: 70px;
+    color: white;
+    margin-top: 40px;
+}
+
+/* section 7 */
+
+.dropbox {
+    font-size: 150px;
+    font-weight: bold;
+    color: rgba(215, 9, 47, 0.977);
+}
+
+.num {
+    font-size: 120px;
+    font-weight: bold;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* section 8*/
+#facts {   
+    background-color: #F1F0F5
+}
+
+.pro {
+    display: flex;
+    height: 3rem;
+    overflow: hidden;
+    font-size: .75rem;
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+.progress-bar-container {
+    position: relative;
+    height: 60px; 
+}
+
+.progress-bar {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+ }
+
+.progress-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* section 9 */
+#railway {
+    min-height: auto;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(65, 62, 82); 
+}
+
+.background-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/trainback.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+#railway .card {
+    background-color: transparent;
+    min-height: auto;
+    color: rgba(255, 255, 255);
+    font-family: montserrat ultralight;
+    border:white solid 1px;
+    box-shadow: 0px 0px 10px rgba(240, 236, 236, 0.3);
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.butn :hover {
+    background-color: #dd1b3c;
+    color:white
+}
+
+/* section 10 */
+
+ .img-cont {
+    margin-bottom: 0px ;
+    background-image: url('./images/mission.jpg') ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .textbox {
+    border:rgb(195, 186, 186) solid 1px;
+    padding:15px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    animation-fill-mode: forwards;
+ }
+
+.num1 {
+    color: #ffffff;
+    background-color: #980633;
+    border-radius: 50%;
+    padding:15px;
+}
+.num2 {
+    color: #ffffff;
+    background-color: #dd1b3c;
+    border-radius: 50%;
+    padding:15px;
+}
+.num3 {
+    color: #ffffff;
+    background-color: #f6516d;
+    border-radius: 50%;
+    padding:15px;
+}
+
+/* section 11 */
+
+.cont {
+    margin-bottom: 0px ;
+    background-image: url('./images/trainlg.jpg') ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ /* section 12 */
+
+ .sale{
+    border-radius: 50%;
+    background-color: rgb(34, 34, 39);
+    color:white;
+    padding:15px;
+    font-size: 30px;
+ }
+
+ /* section 13 */
+ .image-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow-x: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-row img {
+    max-width: 100%;
+    height: auto;
+    margin:50px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.image-controls {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#prev {
+    left: 0;
+}
+
+#next {
+    right: 0;
+}
+
+/* section 13 */
+#quote {
+    max-width: 100%;
+    overflow-x: hidden;
+
+}
+#quote .img {
+    max-width: 100%;
+    width: 475px;
+    height: 498px;
+}
+.quote {
+    background-color: transparent;
+    color: white;
+}
+.main{
+    border:#ffffff solid 1px;
+}
+
+#quote ::placeholder {
+    color:white;
+}
+
+/* section 14 */
+
+.cargo {
+    margin-bottom: 0px ;
+    background-image: url('./images/cargo.jpg') ;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* section 15 */
+.gem-icons {
+    font-size: 40px;
+
+}
+
+.gem-img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+}
+
+/* section 16 */
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:100%;
+    height:600px;
+    }
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:600px;
+}
+.gmap_iframe {
+    width:100%!important;
+    height:600px!important;
+    }
+
+
+
+

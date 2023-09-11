@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-project</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+        <a class="navbar-brand" href="#"></a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon navbar-light"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="p1 py-3"><i class="fa-sharp fa-regular fa-location" style="color: #d00b0b;"></i> Ave New York, NY 95822, USA</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="p2"><i class="fa-solid fa-headphones" style="color: #c60606;"></i>+1 916-875-2235</span></a>
+                </li>
+                <li class="nav-item mr-5 mt-2">
+                    <i class="fa-brands fa-facebook-f mr-3" id="icons"></i>
+                    <i class="fa-brands fa-linkedin-in mr-3" id="icons"></i>
+                    <i class="fa-brands fa-instagram mr-3" id="icons"></i>
+                    <i class="fa-brands fa-pinterest-p mr-3" id="icons"></i>
+                    <i class="fa-brands fa-youtube" id="icons"></i>
+                </li>
+                <div class="d-flex justify-content-end content navitems">
+                    <div class="p-2">Contact us<i class="fas fa-chevron-right mr-4"></i></div>
+                    <div class="p-2">Sign in<i class="fas fa-chevron-right mr-4"></i></div>
+                    <div class="p-2">More menu<i class="fas fa-chevron-right mr-4"></i></div>
+                    <div class="p-2"><a href="https://codex-themes.com/thegem/sites/logistic-transport/#" type="button" class="btn btn-danger"> Join Now </a></div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <header >
+        <nav class="navbar navbar-expand-lg navbar-light" style="padding: 20px 40px 20px 40px;  ">
+            <div class="container">
+            <a class="navbar-brand" href="#" >
+                <i class="fa-regular fa-gem" id="red-icon"></i>THE<b>GEM</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: red;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://codex-themes.com/thegem/sites/logistic-transport/">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ABOUT US
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="#">Our Company</a></li>
+                            <li><a class="dropdown-item" href="#">Our Team</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            SERVICES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Our Services</a></li>
+                            <li><a class="dropdown-item" href="#">Service Single Page 1</a></li>
+                            <li><a class="dropdown-item" href="#">Service Single Page 2</a></li>
+                            <li><a class="dropdown-item" href="#">Service Single Page 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://codex-themes.com/thegem/sites/logistic-transport/routes/">ROUTES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://codex-themes.com/thegem/sites/logistic-transport/track/">TRACK</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="newsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            NEWS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="newsDropdown">
+                            <li><a class="dropdown-item" href="#">Our News & Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Single Post 1</a></li>
+                            <li><a class="dropdown-item" href="#">Single Post 2</a></li>
+                            <li><a class="dropdown-item" href="#">Single Post 3</a></li>
+                        </ul>
+                    </li>                   
+                </ul>
+                <i class="fas fa-search nav-item search-btn" id="search-icon"></i>
+                <div class="nav-item ml-3 d-lg-none">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="search-popup" id="search-popup">
+                    <i class="fas fa-times close-icon" id="close-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search">  
+                </div>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <!-- section 1 -->
+
+    <section id="imageSection">
+        <div class="image-container">
+            <img id="air1" src="./images/air1.jpg" alt="air img">
+            <div class="image-text">
+                <h1>AIR TRANSPORTATION</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel tempora dolorem debitis voluptates corrupti enim vitae non dolores</P>
+                <button class="btn btn-danger" type="button">READ MORE</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img id="land2" src="./images/land2.png" alt="land img">
+            <div class="image-text">
+                <h1>LAND TRANSPORTATION</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel tempora dolorem debitis voluptates corrupti enim vitae non dolores</P>
+                <button class="btn btn-danger" type="button">READ MORE</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img id="rail" src="./images/rail.jpeg" alt="rail img">
+            <div class="image-text">
+                <h1>RAIL TRANSPORTATION</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel tempora dolorem debitis voluptates corrupti enim vitae non dolores</P>
+                <button class="btn btn-danger" type="button">READ MORE</button>
+            </div>
+        </div>
+        <div class="image-container">
+            <img id="sea" src="./images/sea.jpg" alt="sea img">
+            <div class="image-text">
+                <h1>SEA TRANSPORTATION</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Vel tempora dolorem debitis voluptates corrupti enim vitae non dolores</P>
+                <button class="btn btn-danger" type="button">READ MORE</button>
+            </div>
+        </div>
+        <div class="arrow-container">
+            <div class="arrow-icon-container">
+                <i class="fa-solid fa-arrow-down"></i>
+            </div>
+        </div>    
+    </section>
+
+    <!-- section 2 -->
+    <section id="transportsec">
+        <div class="row rowmain">
+            <div class="col-md-3 py-5 px-5 first-third" >
+                <div class="pb-5">
+                    <span class="d-flex justify-content-end mb-5"><i class="fa-solid fa-ship icons"></i></span>
+                </div>
+                   
+                <div class="pb-5">
+                    <h5 style="color: rgb(216, 50, 4)">SEA</h5>
+                    <H5>TRANSPORTATION</H5>
+                </div>
+            </div>
+            <div class="col-md-3 py-5 px-5 sec-forth">
+                <div class="pb-5">
+                    <span class="d-flex justify-content-end mb-5"><i class="fa-solid fa-plane icons"></i></span>                   
+                </div>
+                <div>
+                    <h5 style="color: rgb(216, 50, 4)">AIR</h5>
+                    <h5>TRANSPORTATION</h5>
+                </div>
+            </div>
+            <div class="col-md-3 py-5 px-5 first-third">
+                <div class="pb-5">
+                    <span class="d-flex justify-content-end mb-5"><i class="fa-solid fa-truck icons"></i></span>
+                    
+                </div>
+                <div>
+                    <h5 style="color: rgb(216, 50, 4)">LAND</h5>
+                    <h5>TRANSPORTATION</h5>
+                </div>
+            </div>
+            <div class="col-md-3 py-5 px-5 sec-forth">
+                <div class="pb-5">
+                    <span class="d-flex justify-content-end mb-5"><i class="fa-solid fa-train-subway icons"></i></span>
+                </div>
+                <div>
+                    <h5 style="color: rgb(216, 50, 4)">RAIL</h5>
+                    <h5>TRANSPORTATION</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section id="service">   
+        <div class="container mb-5">
+            <div class="row">
+                <div style="text-align: center;" class="pt-5 mb-5">
+                    <h5 style="font-size: 60px; font-weight: bold;">OUR SERVICES</h5><br><br>
+                    <p style="color: rgb(149, 144, 144);">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus aut eius iste est,
+                        doloribus voluptatem eaque earum laudantium odit illum neque
+                        Quos ut voluptatem vitae cupiditate eos magni necessitatibus voluptates velit.
+                     Similique quam magnam minus mollitia illum autem impedit corrupti ad quod reiciendis.
+                     </p> 
+                </div>              
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="pb-5"><i class="fa-solid fa-paper-plane icons"></i></div>
+                            <div class="pb-4">
+                                <h5 style="font-weight: bold;">ECONOMICAL AIR FREIGHT</h5>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Sed eum aperiam nulla, non, natus quae
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="pb-5"><i class="fa-solid fa-warehouse icons"></i></div>
+                            <div class="pb-4">
+                                <h5 style="font-weight: bold;">WAREHOUSING</h5>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Sed eum aperiam nulla,
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="pb-5"><i class="fa-regular fa-clock icons"></i></div>
+                            <div class="pb-4">
+                                <h5 style="font-weight: bold;">SAME DAY DELIVERY</h5>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Sed eum aperiam nulla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="pb-5"><i class="fa-solid fa-box-open icons"></i></div>
+                            <div class="pb-4">
+                                <h5 style="font-weight: bold;">Packag & STORAGE</h5>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Sed eum aperiam nulla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="pb-5"><i class="fa-solid fa-box icons"></i></div>
+                            <div class="pb-4">
+                                <h5 style="font-weight: bold;">TIME BOUND DELIVERY</h5>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Sed eum aperiam nulla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="pb-5"><i class="fa-solid fa-signs-post icons"></i></div>
+                            <div class="pb-4">
+                                <h5 style="font-weight: bold;">MULTI-MODAL TRANSPORT</h5>
+                            </div>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                     Sed eum aperiam nulla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- section 4 -->
+
+    <section id="tech">
+        <div class="row" style="height: auto;">
+            <div class="col-md-4 p-0 mx-0">
+                <div class="position-relative">
+                    <img src="./images/tech22.avif" alt="" class="img-fluid">
+                    <div class="overlay">
+                        <h5 class="tech-heading">LATEST</h5>
+                        <h5 class="tech-heading" style="color: white; font-weight: bold;">TECHNOLOGY</h5>
+                        <p class="tech-description">Lorem ipsum dolor, sit amet consectetur.
+                            maxime nihil possimus impedit quisquam repellat eos voluptate error. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-0">
+                <div class="position-relative">
+                    <img src="./images/tech1.jpeg" alt="" class="img-fluid">
+                    <div class="overlay">
+                        <h5 class="tech-heading">SAFE IN</h5>
+                        <h5 class="tech-heading" style="color: black; font-weight: bold;">INSURED</h5>
+                        <p class="tech-description">Lorem ipsum dolor, sit amet consectetur.
+                            maxime nihil possimus impedit quisquam repellat eos voluptate error. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p-0">
+                <div class="position-relative">
+                    <img src="./images/tech3.jpg" alt="" class="img-fluid">
+                    <div class="overlay">
+                        <h5 class="tech-heading" >TIMELY</h5>
+                        <h5 class="tech-heading" style="color: white; font-weight: bold;">DELIVERY</h5>
+                        <p class="tech-description">Lorem ipsum dolor, sit amet consectetur.
+                            maxime nihil possimus impedit quisquam repellat eos voluptate error. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- section 5 -->
+
+    <section>
+        <div class="container" >
+            <div class="row" >
+                <div class="d-flex justify-content-center pb-4">
+                    <h5 style="font-size: 50px;">WE ARE THE BEST</h5>
+                </div>
+                <div class="d-flex justify-content-center mb-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Neque maxime cumque soluta quas similique nostrum illo ullam voluptate</p>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- section 6 -->
+
+    <section id="own" >
+            <div class="row">
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="para mr-5">
+                            <p>01.</p> 
+                        </div>
+                        <div class="heading">
+                            <h5> WE ARE CREATIVE</h5>
+                            <h5>& PROFESSIONAL</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="para mr-5">
+                            <p>02.</p> 
+                        </div>
+                        <div class="heading">
+                            <h5> WE ARE ALWAYS</h5>
+                            <h5>IMPROVING</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="para mr-5">
+                            <p>03.</p> 
+                        </div>
+                        <div class="heading">
+                            <h5> WE ARE HONEST</h5>
+                            <h5>& DEPENDABLE</h5>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- section 7 -->
+
+    <section>
+        <div class="container" >
+            <div style="height: 600px;" class=" d-flex flex-column justify-content-center align-items-center">
+                <div>
+                    <i class="fa-brands fa-dropbox dropbox"></i>
+                </div>
+                <div class="num">
+                    <span>2</span>
+                    <span>5</span>
+                    <span>8</span>
+                    <span>7</span>
+                    <span>0</span>
+                </div>
+                <div class="text-center" style="font-size: 22px; font-family: 'Montserrat', Arial, sans-serif;">
+                    <p>PACKAGES DELIVERED</p>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- section 8 -->
+
+    <section id="facts">
+        <div class="container pb-5">
+            <div class="row py-5" style="font-family: 'Montserrat', Arial, sans-serif;">
+                <div class="col-md-12 text-center">
+                    <h5 class="py-5" style="font-size: 55px; font-weight: bold;">FACTS AND INSIGHTS</h5>
+                    <div>
+                        <h5>OUR NUMBER OF PERCENTAGE PROPORTION INCREASED SIGNIFICANTLY</h5>
+                    </div>
+                    <div>
+                        <p class="text-center pt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Hic repudiandae aut eaque itaque nesciunt modi veritatis,Lorem ipsum dolor,
+                            sit amet consectetur adipisicing elit. Neque doloremque nesciunt quidem ad harum
+                            sequi ea nulla laboriosam deserunt consequatur optio fuga, est dicta assumenda alias placeat! Numquam, quia quae.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./images/map1.PNG" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6 pt-5">
+                    <!-- Progress Bar 1 -->
+                    <div class="mb-4 progress-bar-container">
+                        <div class="pro">
+                            <div class="progress-bar" role="progressbar" style="width: 50%; background-color: rgb(221, 27, 60);">
+                                <span class="progress-text">ROAD FREIGHT</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Progress Bar 2 -->
+                    <div class="mb-4 progress-bar-container">
+                        <div class="pro">
+                            <div class="progress-bar " role="progressbar" style="width: 70%; background-color: rgb(221, 27, 60);">
+                                <span class="progress-text">AIR FREIGHT</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Progress Bar 3 -->
+                    <div class="mb-4 progress-bar-container">
+                        <div class="pro">
+                            <div class="progress-bar " role="progressbar" style="width: 60%; background-color: rgb(221, 27, 60);">
+                                <span class="progress-text">OCEAN FREIGHT</span>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Progress Bar 4 -->
+                    <div class="mb-5 progress-bar-container">
+                        <div class="pro">
+                            <div class="progress-bar " role="progressbar" style="width: 40%; background-color: rgb(221, 27, 60);">
+                                <span class="progress-text">RAIL FREIGHT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- section 9 -->
+    <section id="railway">
+        <div class="background-image pb-5">
+            <div class="container">
+                <div class="row py-5" style="font-family: 'Montserrat', Arial, sans-serif;">
+                    <div class=" d-flex flex-column justify-content-center align-items-center">
+                        <h5 class="py-5" style="font-size: 45px; font-weight: bold; color:white ;letter-spacing: .05em;" >SPECIAL OFFERS</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card px-0 pt-0">
+                            <div style="background-color: #dd1b3c;width: 100%; padding: 30px;">
+                                <div >
+                                    <h5 style="font-size: 40px;">STANDARD</h5>
+                                </div>
+                                <div>
+                                    <p style="font-size: 30px;">$99 / month</p>
+                                </div>
+                            </div>
+                            <div class="p-2 mt-1" >
+                                <p>Sinlgle Truck</p>
+                            </div>
+                            <div class="p-2 mt-1"style="background-color: rgba(255, 255, 255, 0.3); ">
+                                <p>Additional Truck Available</p>
+                            </div>
+                            <div class="p-2 mt-1">
+                                <p>Insurance</p>
+                            </div>
+                            <div class="p-2 mt-1 mb-4" style="background-color: rgba(255, 255, 255, 0.3); ">
+                                <p>1000 Km</p>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-danger btn-md" style="border: #dd1b3c 5px solid;">ORDER</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card px-0 pt-0">
+                            <div style="background-color: #dd1b3c;width: 100%; padding: 30px;">
+                                <div >
+                                    <h5 style="font-size: 40px;">ADVANCED</h5>
+                                </div>
+                                <div>
+                                    <p style="font-size: 30px;">$199 / month</p>
+                                </div>
+                            </div>
+                            <div class="p-2 mt-1" >
+                                <p>Sinlgle Truck</p>
+                            </div>
+                            <div class="p-2 mt-1" style="background-color: rgba(255, 255, 255, 0.3); ">
+                                <p>Additional Truck Available</p>
+                            </div>
+                            <div class="p-2 mt-1">
+                                <p>Insurance</p>
+                            </div>
+                            <div class="p-2 mt-1 mb-4" style="background-color: rgba(255, 255, 255, 0.3); ">
+                                <p>1000 Km</p>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-danger btn-md" style="border: #dd1b3c 5px solid;" >ORDER</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card px-0 pt-0">
+                            <div style="background-color: #dd1b3c;width: 100%; padding: 30px;">
+                                <div >
+                                    <h5 style="font-size: 40px;"> &nbsp; PREMIUM &nbsp;</h5>
+                                </div>
+                                <div>
+                                    <p style="font-size: 30px;">$99 / month</p>
+                                </div>
+                            </div>
+                            <div class="p-2 mt-1" >
+                                <p>Sinlgle Truck</p>
+                            </div>
+                            <div class="p-2 mt-1"style="background-color: rgba(255, 255, 255, 0.3); ">
+                                <p>Additional Truck Available</p>
+                            </div>
+                            <div class="p-2 mt-1">
+                                <p>Insurance</p>
+                            </div>
+                            <div class="p-2 mt-1 mb-4" style="background-color: rgba(255, 255, 255, 0.3); ">
+                                <p>1000 Km</p>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-outline-danger btn-md" style="border: #dd1b3c 5px solid;" >ORDER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 10 -->
+    <section>
+        <div class="img-cont">
+            <div class="container py-5">
+                <div class="row pt-5 py-5">
+                    <div class="col-md-6 pt-4">
+                        <DIV class="mt-5 mb-5"><h5 style="font-size: 40px; font-weight: bold;">COMPANY'S MISSION</h5></DIV>
+                        <div class="mt-5 mb-5" style="color: rgb(131, 118, 118);"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod commodi ab odit ea aliquam 
+                              molestiae neque repellendus reprehenderit officia dolorem itaque
+                              laudantium maiores velit doloribus similique vero aperiam repudiandae eligendi. Non, autem.</p></div>
+
+                        <div class="textbox">
+                            <div class="d-flex justify-content-center">
+                                <div class="mr-4 num1" style="font-size: 25px;">1</div>
+                                <div style="color: #980633; font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            </div>
+                        </div>
+                        <div class="textbox">
+                            <div class="d-flex justify-content-center">
+                                <div class="mr-4 num2" style="font-size: 25px;">2</div>
+                                <div style="color:#dd1b3c; font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            </div>
+                        </div>
+                        <div class="textbox mb-5">
+                            <div class="d-flex justify-content-center">
+                                <div class="mr-4 num3" style="font-size: 25px;">3</div>
+                                <div style="color: #f6516d; font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            </div>
+                        </div>
+                      
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 11 -->
+    <section>
+        <div class="cont">
+            <div class="container py-5">
+                <div class="d-flex justify-content-end py-5">
+                    <div class="col-md-6 py-5">
+                        <div class="p-5 mb-5">
+                            <span style="font-size: 40px; font-weight: bold;">MORE THAN </span><span style="color:#dd1b3c; font-size: 70px; font-weight: bold;"> 7000</span>
+                            <h5 style="font-weight: bold; font-size: 40px;">HAPPY CUSTOMERS!</h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-5 p-2">
+                                    <i class="fa-solid fa-trophy sale"></i>
+                                </div>
+                                <div>
+                                    <h5 style="color:#dd1b3c; font-weight: bold;">GOOD SALE</h5>
+                                </div>
+                                <div>
+                                    <p style="color:grey; font-size: 18px;">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor
+                                         incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-5 p-2">
+                                    <i class="fa-solid fa-chalkboard sale"></i>
+                                </div>
+                                <div>
+                                    <h5 style="color:#dd1b3c; font-weight: bold;">GOOD MARKETING</h5>
+                                </div>
+                                <div>
+                                    <p style="color:grey; font-size: 18px;">Lorem ipsum dolor sit amet elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 12-->
+
+    <section>
+        <div class="container">
+            <div class="text-center py-5">
+                <div>
+                    <h5 style="font-size: 40px; font-weight: bold;">OUR CLIENTS</h5>
+                </div>
+                <div class="pt-5">
+                    <p style="color: grey;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div >
+                <div class="image-container">
+                    <div class="image-controls" id="prev">
+                        <div><i class="fa-solid fa-chevron-left" ></i></div>
+                    </div>
+
+                        <div class="image-row">
+                        <div><img src="./clients/billy.png" alt="" id="image1"></div>
+                        <div><img src="./clients/designer.png" alt="" id="image2"></div>
+                        <div><img src="./clients/estd.png" alt="" id="image3"></div>
+                        <div><img src="./clients/frank.png" alt="" id="image4"></div>
+                        <div><img src="./clients/hello.png" alt="" id="image5"></div>
+                        <div><img src="./clients/joe.png" alt="" id="image6"></div>
+                        <div><img src="./clients/labels.png" alt="" id="image7"></div>
+                        <div><img src="./clients/p-labels.png" alt="" id="image8"></div>
+                        <div><img src="./clients/racer.png" alt="" id="image9"></div>
+                        <div><img src="./clients/vintage.png" alt="" id="image10"></div>
+                        </div>
+                    
+                        <div class="image-controls" id="next">
+                            <div><i class="fa-solid fa-chevron-right" ></i></div>
+                        </div>
+                    
+                </div> 
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section 13 -->
+    <section id="quote">
+        <div class="row">
+            <div class="col-md-6 text-center" style="background-color: #dd1b3c; color: white;">
+                <div class="container" >
+                    <div class="py-5">
+                        <h5 style="font-size: 40px; font-weight: bold;">GET A QUOTE</h5>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                        <input type="text" placeholder="Name*" class="form-control mb-2 mr-3 " style="width: 40%; background-color: transparent;" required>
+                        <input type="email" placeholder="Email" class="form-control mb-2" style="width: 40%; background-color: transparent;">
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                        <select id="dropdown1" class="form-control mb-2 mr-3" style="width: 40%; background-color: transparent;">
+                            <option value="shipfrom" >Ship from*</option>
+                            <option value="usa">USA</option>
+                            <option value="china">China</option>
+                            <option value="germany">Germany</option>
+                            <option value="russia">Russia</option>
+                        </select>
+                        <select id="dropdown2" class="form-control mb-2" style="width: 40%; background-color: transparent;">
+                            <option value="shipto">Ship to*</option>
+                            <option value="usa">USA</option>
+                            <option value="china">China</option>
+                            <option value="germany">Germany</option>
+                            <option value="russia">Russia</option>
+                        </select>
+                    </div>
+                    <div class="mb-3  d-flex justify-content-center">
+                        <textarea placeholder="Message*" rows="4" class="form-control" style="width: 82%; background-color: transparent;"></textarea>
+                    </div>
+                    <div class="pt-5">
+                        <button type="button" class="btn btn-dark btn-lg"><b>BOOK NOW</b></button>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-6 p-0">
+                    <div>
+                        <img src="./images/quote.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    
+    <!--section 14  -->
+
+    <section>
+        <div class="cargo">
+            <div class="container">
+                <div class="row p-5">
+                    <div class="text-center">
+                        <div class="py-5">
+                            <h5 style="font-size: 40px; color: white; font-weight: bold;">BE SURE YOUR CARGO IS IN GOOD HANDS</h5>
+                        </div>
+                        <div class="py-5">
+                            <h5 style="color:#dd1b3c; font-size: 40px; font-weight: bold;">100% RESPONSIBILITY</h5>                       
+                        </div>
+                        <div class="py-5">
+                            <p style="color: white; font-size: 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odit labore, maiores nostrum, animi quibusdam esse facilis fugiat quod quos aliquam </p>
+                        </div>
+    
+                        <div class="py-5">
+                            <button type="button" class="btn btn-danger btn-lg" style="font-weight:bold; ">READ MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 15 -->
+    <section id="transportsec">
+        <div class="row rowmain">
+            <div class="col-md-3 py-5 px-5 first-third" >
+                <div class="pb-3">
+                    <span class="d-flex justify-content-start mb-5"><img src="./images/gem.png" alt="" class="gem-img"></span>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit ametcon sectetur adipisicing elit,
+                     sed doiusmod tempor incidi labore et dolore agna aliqua. Ut enim ad mini veniam quis.</p>
+                </div>
+            </div>
+            <div class="col-md-3 py-5 px-5 sec-forth">
+                <div class="pb-3">
+                    <span class="d-flex justify-content-end mb-5"><i class="fa-solid fa-location-dot gem-icons"></i></span>                   
+                </div>
+                <div class="py-4">
+                    <span style="color: rgb(216, 50, 4); font-size: 30px;">OUR </span><span style="font-size: 30px;"> ADDRESS</span>   
+                </div>
+                <div>
+                    <p>908 New Hampshire Avenue Northwest #100
+                        Washington, DC, 20037, United States</p>
+                </div>
+            </div>
+            <div class="col-md-3 py-5 px-5 first-third">
+                <div class="pb-3">
+                    <span class="d-flex justify-content-end mb-5"><i class="fa-solid fa-phone gem-icons"></i></span>   
+                </div>
+                <div class="py-4">
+                    <span style="color: rgb(216, 50, 4);font-size: 30px">OUR</span> <span style="font-size: 30px;"> PHONES</span>   
+                </div>
+                <div>
+                    <p>Phone: +1 916-875-2235 </p>
+                    <p>Mobile: +1 916-875-2235</p>      
+                </div>
+            </div>
+            <div class="col-md-3 py-5 px-5 sec-forth">
+                <div class="pb-3">
+                    <span class="d-flex justify-content-end mb-5"><i class="fa-regular fa-clock gem-icons"></i></span>
+                </div>
+                <div class="py-4">
+                    <span style="color: rgb(216, 50, 4);font-size: 30px">OUR</span> <span style="font-size: 30px;"> HOURS</span>
+                </div>
+                <div>
+                    <p>Monday-Friday: 9:00 – 18:00</p>
+                    <p>Saturday: 11:00 – 17:00</p>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 16 -->
+    <section class="mt-0">
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=seagirt Blvd&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <a href="https://gachanymph.com/">Gacha Nymph APK</a>
+            </div>
+    </section>
+
+    <!-- section 18 -->
+    <footer style="background-color: rgb(45, 37, 46)">
+        <div class="container">
+        <div class="row py-5">
+                <div class="col-md-4 d-flex justify-content-center">
+                    <p style="color: rgb(189, 197, 216)">© Copyright 2019</p>
+                    <a href="https://codex-themes.com/thegem/wordpress-woocommerce-theme/" style="color:#c60606;">CodexThemes</a>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="row">
+                        <div class="col-md-3" >
+                            <p style="color: rgb(189, 197, 216)">Support |</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p style="color: rgb(189, 197, 216)">Contact Us |</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p style="color: rgb(189, 197, 216)">Disclaimer |</p>
+                        </div>
+                        <div class="col-md-3">
+                            <p style="color: rgb(189, 197, 216)">Privacy policy |</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <ul>
+                        <li class="nav-item mr-5 mt-2">
+                            <i class="fa-brands fa-facebook-f mr-3" id="icons"></i>
+                            <i class="fa-brands fa-linkedin-in mr-3" id="icons"></i>
+                            <i class="fa-brands fa-instagram mr-3" id="icons"></i>
+                            <i class="fa-brands fa-pinterest-p mr-3" id="icons"></i>
+                            <i class="fa-brands fa-youtube" id="icons"></i>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    </footer> 
+
+</body>
+</html>
