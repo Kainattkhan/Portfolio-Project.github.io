@@ -1,5 +1,6 @@
 
-        // ftn to toggle the search popup
+// ---------------------------ftn to toggle the search popup---------------------------
+
         document.getElementById('search-icon').addEventListener('click', function () {
             var searchPopup = document.getElementById('search-popup');
             if (searchPopup.style.display === 'block') {
@@ -14,7 +15,8 @@
             var searchPopup = document.getElementById('search-popup');
             searchPopup.style.display = 'none';
         });
-    
+   
+// ----------------------------for animations in the first section-------------------------
 
 const imageContainers = document.querySelectorAll("#imageSection .image-container");
 let currentIndex = 0;
@@ -25,7 +27,7 @@ function showImage() {
     currentContainer.querySelector('img').classList.add("zoom-in");
     currentContainer.style.display = "block";
 
-    // Hide the text initially
+    // To Hide the text initially
     const imageText = currentContainer.querySelector('.image-text');
     imageText.style.opacity = 0;
 
@@ -36,7 +38,6 @@ function showImage() {
         // Start the text animation
         imageText.style.animation = 'fadeInText 1s ease-in-out forwards';
 
-        // Hide the text and move to the next image after a delay
         setTimeout(() => {
             imageText.style.animation = 'none';
             currentContainer.querySelector('img').classList.remove("zoom-in");
@@ -45,20 +46,17 @@ function showImage() {
             // Move to the next image
             currentIndex++;
             if (currentIndex >= imageContainers.length) {
-                currentIndex = 0; // Reset the index to loop through images
+                currentIndex = 0; 
             }
-
-            // Call the showImage function again for the next image
             showImage();
-        }, 6000); // Adjust the duration of the zoom-out animation as needed
-    }, 2500); // Delay to synchronize text animation with image transition
+        }, 6000); 
+    }, 2500); 
 }
-
-// Start the animation loop
 showImage();
 
 
-// -----------------------------section 10: for textboxes animations--------------------------------
+// ----------------------------- for textboxes animations--------------------------------
+
 document.addEventListener("DOMContentLoaded", function () {
     const textBoxes = document.querySelectorAll(".textbox");
     const delay = 500; // Delay in milliseconds between animations
@@ -73,7 +71,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-// ------------------------------section 12: for next and before images of clients------------------------------
+// ------------------------------ for next and before images of clients section------------------------------
+
 document.addEventListener('DOMContentLoaded', function () {
     const images = document.querySelectorAll('.image-row img');
     const prevButton = document.getElementById('prev');

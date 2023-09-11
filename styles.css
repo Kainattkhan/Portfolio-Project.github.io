@@ -198,8 +198,9 @@
 
 /* section 2*/
 #transportsec {
-    min-height: 400px;
-    overflow: hidden;    
+    min-height: 450px;
+    overflow: hidden;  
+    margin-top: 0px;  
 }
 
 .rowmain {
@@ -523,8 +524,8 @@
 }
 #quote .img {
     max-width: 100%;
-    width: 475px;
-    height: 498px;
+    /* width: 475px;
+    height: 700px; */
 }
 .quote {
     background-color: transparent;
